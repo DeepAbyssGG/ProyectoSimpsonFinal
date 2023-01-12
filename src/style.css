@@ -1,0 +1,20 @@
+body{
+    background: rgb(113, 156, 237);
+    margin-top: 50px;
+}
+
+.botonNaranja{
+    transition: 99ms;
+    padding: 7px;
+    background: rgb(246, 190, 4);
+    border-radius: 4px;
+    border: none;
+}
+
+.botonNaranja:hover{
+    transition: 99ms;
+    padding: 7px;
+    background: rgb(246, 149, 4);
+    border-radius: 4px;
+    border: none;
+}
