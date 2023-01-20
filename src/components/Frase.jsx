@@ -1,21 +1,32 @@
-const Frase = () => {
-    return (
-        <section className="row bg-white my-5 p-5 m-1">
-            <aside className="col-4 m-5 text-center">
-            <img
-              src="https://trello.com/1/cards/632a448eb47fe800d9bdef25/attachments/632cd857ffabe0042d12baf2/download/image.png"
-              alt="the simpsons"
-              className="w-100"
-            />
-           </aside>
+import { Col, Row } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-
-
-        </section>
-    )
-
-
-
-
-
+const frase = ({personaje}) => {
+  return (
+    <Card>
+     <Card.Body md={4}>
+    <Row>
+        <Col>
+        <img 
+        src={personaje.image} 
+        alt={personaje.character}
+        className='w-100' />     
+        </Col>
+        <Col md={8}>
+            <Card.Title><h3>{personaje.character}</h3></Card.Title>
+            <Card.Text>
+          {personaje.quote}
+            </Card.Text>                        
+        </Col>
+    </Row>
+    </Card.Body>
+    </Card>
+  );
 }
+
+export default frase
+
+
+
+
